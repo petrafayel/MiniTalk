@@ -66,7 +66,7 @@ void	to_text(char *bin)
 	write(1, &c, 1);
 }
 
-void	sig_h(int sig, siginfo_t *info, void *content)
+void	sig_h(int sig, siginfo_t *info, __attribute__((unused))void *content)
 {
 	static int	i;
 	static char	binary[9];
